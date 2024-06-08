@@ -6,6 +6,7 @@ from django.contrib.auth import get_user_model
 
 from core import models
 
+
 class ModelsTests(TestCase):
     """Test cases for models"""
     def test_create_user_with_email_successful(self):
@@ -61,5 +62,3 @@ class ModelsTests(TestCase):
         )
 
         self.assertEqual(str(recipe), recipe.title)
-
-
